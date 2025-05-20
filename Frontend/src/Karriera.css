@@ -1,0 +1,130 @@
+
+.karriera-wrapper {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.karriera-img {
+  object-fit: cover; 
+  width: 100%;
+  height: 100%;
+}
+
+.karriera-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.4); 
+  z-index: 1;
+}
+
+.karriera-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  color: white;
+  z-index: 2;
+  padding: 0 20px;
+  max-width: 80%;
+}
+
+.karriera-text p {
+  font-size: 25px;
+  font-weight: 600;
+  margin-bottom: 15px;
+  text-transform: uppercase; 
+}
+
+.karriera-text h1 {
+  font-size: 48px;
+  font-family: 'Georgia', serif;
+  font-weight: bold;
+  margin-bottom: 15px;
+  letter-spacing: 2px; 
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6); 
+}
+
+.karriera-text h5 {
+  font-size: 27px;
+  font-family: 'Arial', sans-serif;
+  line-height: 1.6;
+  max-width: 800px;
+  margin: 0 auto;
+  opacity: 0.8;
+}
+
+
+.karriera-text p, .karriera-text h1, .karriera-text h5 {
+  animation: fadeInUp 1.5s ease-out;
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+  
+  
+.card-custom {
+  width: 100%;
+  border-radius: 15px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.card-custom-img {
+  height: 400px;
+  object-fit: cover;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+}
+
+
+.card-custom:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.card-custom-title {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.card-custom-subtitle {
+  font-size: 18px;
+  color: #6c757d; 
+}
+
+.card-custom-text {
+  font-size: 16px;
+}
+
+@media (max-width: 576px) {
+  .karriera-text {
+    padding: 0 10px;
+    max-width: 95%;
+  }
+}
+@media (max-width: 768px) {
+  .karriera-text h1 {
+    font-size: 32px;
+  }
+}
+
+@media (max-width: 768px) {
+  .karriera-text h5 {
+    font-size: 18px;
+  }
+}
